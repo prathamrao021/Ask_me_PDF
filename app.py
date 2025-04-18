@@ -21,7 +21,7 @@ embeddings = OllamaEmbeddings(model="llama3.1")
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1024, chunk_overlap=80, length_function=len, is_separator_regex=False)
 # Create PromptTemplate for the raw prompt
 raw_prompt = PromptTemplate.from_template(""" 
-    <s>[INST] You are a technical assistant good at searching documents and answering questions. Hereby, the context of a Resume is provided answer the Question according to the Context and if you don't know the answer, say "I don't know".[/INST] </s>
+    <s>[INST] You are a technical assistant good at searching documents and answering questions. If you don't find an answer from the Context, say "I don't know".[/INST] </s>
     [INST] {input}
         Context: {context}
         Answer: 
