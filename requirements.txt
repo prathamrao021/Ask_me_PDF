@@ -1,0 +1,6 @@
+flask
+langchain
+langchain-ollama
+langchain-chroma
+langchain-community
+pdfplumber
