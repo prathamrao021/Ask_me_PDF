@@ -36,6 +36,7 @@ Ask_me_PDF is a Flask-based application integrated with the LangChain framework 
 
 2. **Download the Llama3.1 Model**:
    - Visit the [Ollama website](https://ollama.com) and download the `llama3.1` model to your local computer.
+   - Run `ollama serve` command to run the model and keep it running in the background.
 
 3. **Set Up the Application**:
    - Clone or download this repository to your local machine.
