@@ -52,8 +52,26 @@ Ask_me_PDF is a Flask-based application integrated with the LangChain framework 
 5. **Use the Endpoints**:
    - Use tools like Postman or `curl` to interact with the endpoints:
      - `/pdf`: Upload a PDF file.
+        - Example for `curl`:
+            ```bash
+            curl -X POST http://localhost:8080/pdf
+            -H "Content-Type: multipart/form-data"
+            -F "file=<pdf_path>"
+            ```
      - `/ask_pdf`: Query the uploaded PDF.
+        - Example for `curl`:
+            ```bash
+            curl -X POST http://localhost:8080/ask_pdf \
+            -H "Content-Type: application/json" \
+            -d '{"query": "<question_related_to_pdf_to_be_asked>"}'
+            ```
      - `/ai`: General-purpose AI interaction.
+        - Example for `curl`:
+            ```bash
+            curl -X POST http://localhost:8080/ai \
+            -H "Content-Type: application/json" \
+            -d '{"query": "<question>"}'
+            ```
 
 ## Technologies Used
 - **Flask**: Backend framework for building RESTful APIs.
