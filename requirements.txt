@@ -3,3 +3,4 @@ langchain
 langchain-ollama
 langchain-community
 pdfplumber
+langchain_text_splitters
